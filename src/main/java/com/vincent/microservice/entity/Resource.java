@@ -6,14 +6,14 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
-@TableName("sys_user")
+@TableName("sys_resource")
 @Data
-public class User implements Serializable {
+public class Resource implements Serializable {
     private int id;
-    private String loginName;
-    private String password;
-    private String passwordSalt;
+    private String resourceName;
+    private int parentId;
+    private String type;
     private Date creationTime;
-    private Date updateTime;
     private String creator;
+
 }
