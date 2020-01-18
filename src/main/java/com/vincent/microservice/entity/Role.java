@@ -13,4 +13,6 @@ public class Role implements Serializable {
     private String roleName;
     private String creationTime;
     private String creator;
+    private String state;
+    private String description;
 }
