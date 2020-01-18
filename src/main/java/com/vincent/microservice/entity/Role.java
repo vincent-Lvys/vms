@@ -1,17 +1,17 @@
 package com.vincent.microservice.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
+
 @TableName("sys_role")
 @Data
 public class Role implements Serializable {
-    private String id;
+    private int id;
     private String roleName;
-    private String creationTime;
+    private Date creationTime;
     private String creator;
     private String state;
     private String description;
