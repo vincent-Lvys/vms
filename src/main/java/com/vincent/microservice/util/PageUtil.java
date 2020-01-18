@@ -20,10 +20,6 @@ public class PageUtil {
         this.size = data.getSize();
     }
     public PageUtil(Page data){
-        this.message = "success";
-        this.data = data.getRecords();
-        this.code = "200";
-        this.count = data.getTotal();
-        this.size = data.getSize();
+        this("200",data,"success");
     }
 }
