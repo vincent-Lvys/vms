@@ -22,7 +22,7 @@
             <div class="layui-row">
                 <form class="layui-form" th:method="post">
                   <div class="layui-form-item">
-                      <input type="hidden" name="id" th:value="${param.id}">
+                      <input type="hidden" name="id" th:value="${user.id}">
                       <label for="username" class="layui-form-label">
                           <span class="x-red">*</span>登录名
                       </label>
@@ -66,8 +66,8 @@
                   <div class="layui-form-item">
                       <label for="L_repass" class="layui-form-label">
                       </label>
-                      <a  class="layui-btn" lay-filter="add" lay-submit="">
-                          增加
+                      <a  class="layui-btn" lay-filter="add" lay-submit="" th:text="${user.id} == 0?'增加':'修改'">
+
                       </a>
                   </div>
               </form>
@@ -98,8 +98,8 @@
                 form.on('submit(add)',
                 function(data) {
                     $.post('/updateOrSaveUser',data.field,function (result) {
-                        var msg = "增加成功!!!",icon = 6;
-                        if (!result) {msg = '增加失败!!!';icon = 5}
+                        var msg = (data.field.id==0?"增加":"编辑")+"成功!!!",icon = 6;
+                        if (!result) {msg.replace("成功","失败");icon = 5}
                         layer.msg(msg, {icon: icon,time:1000},function () {
                             var index = parent.layer.getFrameIndex(window.name);
                             parent.layer.close(index);

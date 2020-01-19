@@ -45,7 +45,7 @@
                                    class="layui-input">
                         </div>
                         <div class="layui-inline layui-show-xs-block">
-                            <button class="layui-btn" lay-submit="" lay-filter="sreach"><i
+                            <button class="layui-btn" lay-submit="" lay-filter="sreach" id="search"><i
                                     class="layui-icon">&#xe615;</i></button>
                         </div>
                     </form>
@@ -125,7 +125,7 @@
                     , limit: res.size
                     , layout: ['prev', 'page', 'next', 'skip', 'count', 'limit']
                     , jump: function (obj, first) {
-                        console.log(obj)
+                        // console.log(obj)
                         if (!first) {
                             curr = obj.curr;
                             limit = obj.size;
