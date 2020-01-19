@@ -70,8 +70,12 @@ public class UserController {
         User user = new User();
         user.setLoginName(username);
         user.setPassword(password);
-        if (!StringUtils.isEmpty(id)) user.setId(Integer.parseInt(id));
         user.setCreationTime(new Date());
+        if (!StringUtils.isEmpty(id)) {
+            user.setId(Integer.parseInt(id));
+            user.setUpdateTime(new Date());
+            user.setCreationTime(null);
+        }
         return userService.saveOrUpdate(user);
     }
 
