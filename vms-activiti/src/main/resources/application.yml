@@ -1,0 +1,29 @@
+server:
+  port: 7002
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  # 数据库配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      datasource:
+        master:
+          url: jdbc:mysql://localhost:3306/vms?serverTimezone=GMT%2B8&useSSL=false&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: 123456
+        activiti:
+          url: jdbc:mysql://localhost:3306/vms?serverTimezone=GMT%2B8&useSSL=false&nullCatalogMeansCurrent=true
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          username: root
+          password: 123456
+  # 工作流
+  activiti:
+    # 自动部署验证设置:
+    # true（默认）自动部署流程
+    # false 不自动部署，需要手动部署发布流程
+    check-process-definitions: false
+    # 可选值为: false,true,create-drop,drop-create
+    # 默认为true。为true表示activiti会对数据库中的表进行更新操作，如果不存在，则进行创建。
+    database-schema-update: true
