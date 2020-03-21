@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.vincent.ms</groupId>
-	<artifactId>vms-services</artifactId>
+	<artifactId>IronBirch</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>vms-services</name>
+	<name>IronBirch</name>
 	<modules>
 		<module>vms-activiti</module>
 		<module>vms-accounts</module>

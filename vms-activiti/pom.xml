@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.vincent.ms</groupId>
-        <artifactId>vms-services</artifactId>
+        <artifactId>IronBirch</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../</relativePath>
     </parent>
