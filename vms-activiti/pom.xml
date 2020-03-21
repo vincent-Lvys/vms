@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.vincent.microservice</groupId>
-        <artifactId>vms</artifactId>
+        <groupId>com.vincent.ms</groupId>
+        <artifactId>vms-services</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>/</relativePath>
+        <relativePath>../</relativePath>
     </parent>
 
     <artifactId>vms-activiti</artifactId>
