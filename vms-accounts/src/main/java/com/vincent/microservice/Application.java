@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 @MapperScan(value = "com.vincent.*.mapper")
-public class VmsApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(VmsApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
