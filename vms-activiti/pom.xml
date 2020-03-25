@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.vincent.ms</groupId>
-        <artifactId>IronBirch</artifactId>
+        <artifactId>vms-dependencies</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../</relativePath>
+        <!--        <relativePath>../vms-dependencies</relativePath>-->
     </parent>
 
     <artifactId>vms-activiti</artifactId>

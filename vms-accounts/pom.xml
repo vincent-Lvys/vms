@@ -6,8 +6,9 @@
 
     <parent>
         <groupId>com.vincent.ms</groupId>
-        <artifactId>IronBirch</artifactId>
+        <artifactId>vms-dependencies</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <!--<relativePath>../vms-dependencies</relativePath>-->
     </parent>
 
     <artifactId>vms-accounts</artifactId>
